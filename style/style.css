@@ -22,18 +22,19 @@ body {
 
 /******************************************/
 .wrapp {
-	position: relative;
 	width: 100%;
-	height: auto;
-	padding: 50px;
-	padding-top: 8rem;
-	z-index: 1;
+	padding: 50px; 
+	padding-top: 8rem; 
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	flex-direction: column;
 }
 
 .title {
 	margin-top: 0;
 	margin-bottom: 100px;
-	font-size: 4rem;
+	font-size: 2rem;
 	text-transform: uppercase;
 	color: var(--pr-color);
 }
@@ -191,4 +192,10 @@ a[data-fancybox] img {
 
 .is-nav-selected .fancybox__thumb::after {
 	display: none;
+}
+
+@media (max-width: 600px) {
+	.gallery__item {
+		max-width: 100%;
+	}
 }
